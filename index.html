@@ -56,8 +56,9 @@
     // Add event listeners for mouse events on each movable image
     movableImages.forEach(img => {
       img.addEventListener('mousedown', startDragging);
-      img.addEventListener('mouseup', stopDragging);
       img.addEventListener('mousemove', dragImage);
+      img.addEventListener('mouseup', stopDragging);
+      
     });
 
     // Function to start dragging the image
